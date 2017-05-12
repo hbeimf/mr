@@ -5,7 +5,8 @@
   {mod, { mr_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    go
    ]},
   {env,[]},
   {modules, []},
