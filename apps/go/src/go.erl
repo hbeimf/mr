@@ -6,6 +6,23 @@
 -module(go).
 -compile(export_all).
 
+% map
+map_fun_demo() ->
+    okkkklll.
+
+map_fun_demo(RiakObject, _, _) ->
+    Bucket = riak_object:bucket(RiakObject),
+    Key = riak_object:key(RiakObject),
+    Val = riak_object:get_value(RiakObject),
+    % riak_object:get_metadatas(RiakObject),
+    % [RiakObject].
+    R = parse_list(binary_to_term(Val)),
+    % [{Bucket, Key, binary_to_term(Val)}].
+    [{Bucket, Key, R}].
+
+
+
+
 %%====================================================================
 %% Call Api functions
 %% 同步消息发送
