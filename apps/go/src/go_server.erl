@@ -293,5 +293,5 @@ force_kill_process() ->
     CmdPath         = code:lib_dir(go, priv),
     Cmd             = lists:flatten(["kill -9 $(cat ", CmdPath, "/", GoPidFile, ")"]),
     os:cmd(Cmd),
-    os:cmd("pkill xgn."),
+    os:cmd("pkill mr."),
     ok.

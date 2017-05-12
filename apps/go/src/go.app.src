@@ -9,11 +9,11 @@
    ]},
   %%{env,[]},
   {env, [
-    {go_cmd,       "xgn.node"},
-    {go_mailbox,   {go_srv, 'gonode@127.0.0.1'}},
+    {go_cmd,       "mr.node"},
+    {go_mailbox,   {go_srv, 'gomr@127.0.0.1'}},
     {go_log_file,  "go.log"},
     {go_pid_file,  "go.pid"},
-    {go_epmd_port, 5588}
+    {go_epmd_port, 8888}
   ]},
 
   {modules, []},
