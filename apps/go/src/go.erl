@@ -21,6 +21,12 @@ map_fun_demo(RiakObject, _, _) ->
     [{Bucket, Key, R}].
 
 
+dd() ->
+	Filename = code:priv_dir(go)++"/demo.txt" ,
+	%Filename.
+	{_, List} = file:consult(Filename),
+	List.
+
 
 
 %%====================================================================
