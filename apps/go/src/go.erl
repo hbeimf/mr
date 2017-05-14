@@ -66,7 +66,7 @@ str_replace(StrRes, FindStr, ReplaceTo) ->
 
 call(Call) ->
     GoMBox = go_name_server:get_gombox(),
-    gen_server:call(GoMBox, Call).
+    gen_server:call(GoMBox, Call, infinity).
 
 %%====================================================================
 %% Cast Api functions
